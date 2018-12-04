@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "llreactskeleton-20181202193647-authRole",
+            "UnauthRoleArn": "arn:aws:iam::804165849592:role/llreactskeleton-20181202193647-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::804165849592:role/llreactskeleton-20181202193647-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "llreactskeleton-20181202193647-deployment",
+            "UnauthRoleName": "llreactskeleton-20181202193647-unauthRole",
+            "StackName": "llreactskeleton-20181202193647",
+            "StackId": "arn:aws:cloudformation:us-west-2:804165849592:stack/llreactskeleton-20181202193647/9b9b8620-f669-11e8-9cda-02e4b221489c"
+        }
+    }
+}

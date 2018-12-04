@@ -1,0 +1,9 @@
+{
+    "bucketName": "llreactskeletone8b1afd5f67a4b008e0fece78814e309",
+    "authPolicyName": "s3_amplify_c8db5282",
+    "unauthPolicyName": "s3_amplify_c8db5282",
+    "authRoleName": "llreactskeleton-20181202193647-authRole",
+    "unauthRoleName": "llreactskeleton-20181202193647-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}

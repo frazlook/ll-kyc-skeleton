@@ -1,0 +1,30 @@
+.Home {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.Home h1 {
+    font-size: 62px;
+    color: #333;
+    text-align: center;
+}
+
+.Home p {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.homelist p {
+    font-size: 24px;
+    text-align: left;
+}
+
+.Home a {
+    color: #56D5FA;
+    text-decoration: none;
+}
+
+.Home a:hover {
+    color: #333;
+}

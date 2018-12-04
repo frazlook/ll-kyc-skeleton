@@ -1,0 +1,86 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "llreactskeleton-20181202193647-authRole",
+			"UnauthRoleArn": "arn:aws:iam::804165849592:role/llreactskeleton-20181202193647-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::804165849592:role/llreactskeleton-20181202193647-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "llreactskeleton-20181202193647-deployment",
+			"UnauthRoleName": "llreactskeleton-20181202193647-unauthRole",
+			"StackName": "llreactskeleton-20181202193647",
+			"StackId": "arn:aws:cloudformation:us-west-2:804165849592:stack/llreactskeleton-20181202193647/9b9b8620-f669-11e8-9cda-02e4b221489c"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/llreactskeleton-20181202193647-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-12-03T00:48:55.955Z",
+			"output": {
+				"S3BucketSecureURL": "https://llreactskeleton-20181202194234--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://llreactskeleton-20181202194234--hostingbucket.s3-website-us-west-2.amazonaws.com",
+				"Region": "us-west-2",
+				"HostingBucketName": "llreactskeleton-20181202194234--hostingbucket"
+			},
+			"lastPushDirHash": "HDbRVf3vkmEMxiIirZOm2f144Hc="
+		}
+	},
+	"auth": {
+		"cognito40d65f9b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/llreactskeleton-20181202193647-deployment/amplify-cfn-templates/auth/cognito40d65f9b-cloudformation-template.yml",
+				"logicalId": "authcognito40d65f9b"
+			},
+			"lastPushTimeStamp": "2018-12-03T00:48:55.955Z",
+			"output": {
+				"AppClientSecret": "1441e7q84im1modgjhqc973ib9rtcpb0ngahhrej0e8e4o98cv2k",
+				"UserPoolId": "us-west-2_liyiw66yD",
+				"AppClientIDWeb": "vbhh31npj32t2rhmtqks8m26r",
+				"AppClientID": "1dc5j1van08fe40lrishta9i8r",
+				"IdentityPoolId": "us-west-2:f3521e33-428b-4a7c-8528-deed1849ae52",
+				"IdentityPoolName": "cognito40d65f9b_identitypool_40d65f9b",
+				"UserPoolName": "cognito40d65f9b_userpool_40d65f9b"
+			},
+			"lastPushDirHash": "cH395oFJWW3H9zFXSGRIok1r1sA="
+		}
+	},
+	"analytics": {
+		"llreactskeleton": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/llreactskeleton-20181202193647-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticsllreactskeleton"
+			},
+			"lastPushTimeStamp": "2018-12-03T00:48:55.955Z",
+			"output": {
+				"appName": "llreactskeleton",
+				"Region": "us-east-1",
+				"Id": "0d0fdf730a634fe2aef649987768e3c3"
+			},
+			"lastPushDirHash": "KGYC0M0cxhMEOelv6G90x+ETVDA="
+		}
+	},
+	"storage": {
+		"s3c8db5282": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/llreactskeleton-20181202193647-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storages3c8db5282"
+			},
+			"lastPushTimeStamp": "2018-12-03T00:48:55.957Z",
+			"output": {
+				"BucketName": "llreactskeletone8b1afd5f67a4b008e0fece78814e309",
+				"Region": "us-west-2"
+			},
+			"lastPushDirHash": "NnnNYbp8fV1p1mAV/c7WOrXLRhU="
+		}
+	}
+}

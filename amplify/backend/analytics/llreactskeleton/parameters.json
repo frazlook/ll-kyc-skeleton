@@ -1,0 +1,11 @@
+{
+    "appName": "llreactskeleton",
+    "roleName": "pinpointLambdaRoleb8f134bc",
+    "cloudWatchPolicyName": "cloudWatchPolicyb8f134bc",
+    "pinpointPolicyName": "pinpointPolicyb8f134bc",
+    "authPolicyName": "pinpoint_amplify_b8f134bc",
+    "unauthPolicyName": "pinpoint_amplify_b8f134bc",
+    "authRoleName": "llreactskeleton-20181202193647-authRole",
+    "unauthRoleName": "llreactskeleton-20181202193647-unauthRole",
+    "IAMPrefix": "804165849592"
+}
