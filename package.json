@@ -5,6 +5,7 @@
   "dependencies": {
     "aws-amplify": "^1.1.10",
     "aws-amplify-react": "^2.1.4",
+    "informed": "^1.10.12",
     "mdbreact": "^4.8.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
