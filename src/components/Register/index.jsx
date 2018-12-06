@@ -1,64 +1,47 @@
-import React, { Component } from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Form, Text } from 'informed';
-import './Register.css'
+import React, { Component } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "../App.css";
 import "react-tabs/style/react-tabs.css";
-
+import Form from './Form';
+import Upload from './Upload';
+import Button from "@material-ui/core/Button";
 
 class Register extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: ''
-    };
 
-    this.handleInputChange = this.handleInputChange.bind(this);
+  state = {
+    fields: {}
   }
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'input';
-    const name = target.name;
-    this.setState({
-      [name]: value
+  onChange = (updatedValue) => {
+    this.setState({ fields: {
+      ...this.state.fields,
+      ...updatedValue
+      }
     });
   }
 
   render() {
     return (
-
-        <div>
-          <Tabs>
+      <div>
+        <Tabs>
           <TabList>
-            <Tab>
-              Step 1
-            </Tab>
-            <Tab>
-              Step 2
-            </Tab>
-            <Tab>
-              Step 3
-            </Tab>
-            <Tab>
-              Step 4
-            </Tab>
-
+            <Tab>Step 1</Tab>
+            <Tab>Step 2</Tab>
+            <Tab>Step 3</Tab>
+            <Tab>Step 4</Tab>
           </TabList>
-      
+
           <TabPanel>
             <h2>Please enter your information below:</h2>
-            <Form id="simple-form">
-  <label htmlFor="name-field">First name:</label>
-  <Text field="name" id="name-field" />
-  <button type="submit">
-    Submit
-  </button>
-</Form>
+            <Form onChange={fields => this.onChange(fields)} />
+              <p>
+                {JSON.stringify(this.state.fields, null, 2)}
+              </p>
+              
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <h2>Please upload a photo and a copy of your identity document:</h2>
+            <Upload />
           </TabPanel>
           <TabPanel>
             <h2>Any content 2</h2>
@@ -67,8 +50,7 @@ class Register extends Component {
             <h2>Any content 2</h2>
           </TabPanel>
         </Tabs>
-        </div>
-
+      </div>
     );
   }
 }

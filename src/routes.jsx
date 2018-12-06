@@ -9,7 +9,7 @@ import Register from './components/Register';
 import Contact from './components/Contact';
 import Info from './components/Info';
 import FAQ from './components/FAQ';
-import Error404 from './components/Error404';
+import Error404 from './components/Error/404';
 
 const AppRoutes = () => (
   <App>
@@ -22,6 +22,7 @@ const AppRoutes = () => (
       <Route component={Error404} />
     </Switch>
   </App>
+
 );
 
 export default AppRoutes;
